@@ -18,13 +18,13 @@ def display_conversation(history):
         message(history["apprentice"][i], key=str(i))
 
 if st.session_state.clicked:
-    st.title("RoboWiz - Your 24/7 AI Research Apprentice 🧑‍💻")
-    st.subheader("An AI apprentice who can serve you 24/7 by researching on a given question in realtime and provide you answers accordingly")
+    st.title("InfoGenie - Your 24/7 AI Research Apprentice 🧑‍💻")
+    st.subheader("An AI apprentice who can serve you 24/7 by researching on a given question in realtime over Internet and provide you answers accurately within a blink of an eye.")
 
     if "apprentice" not in st.session_state:
         st.session_state["apprentice"] = ["Hello. How can I help you?"]
     if "user" not in st.session_state:
-        st.session_state["user"] = ["Hey RoboWiz!"]
+        st.session_state["user"] = ["Hey InfoGenie!"]
     
     col1, col2 = st.columns([1,2])
     
