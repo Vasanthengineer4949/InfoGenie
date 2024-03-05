@@ -30,7 +30,7 @@ class Researcher:
         self.llm = ChatGroq(temperature=0.5, model_name="mixtral-8x7b-32768", groq_api_key=self.groq_api_key)
         self.hfembeddings = HuggingFaceEmbeddings(
                             model_name=EMBEDDER, 
-                            model_kwargs={'device': 'cuda'}
+                            model_kwargs={'device': 'cpu'}
                         )
 
     def search_articles(self, query):
