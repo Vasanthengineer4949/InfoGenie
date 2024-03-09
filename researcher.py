@@ -12,6 +12,9 @@ from langchain.vectorstores.faiss import FAISS
 from langchain_community.embeddings import HuggingFaceEmbeddings
 import os
 load_dotenv(find_dotenv())
+from langchain.globals import set_debug
+
+set_debug(True)
 
 class Researcher:
 

@@ -32,7 +32,7 @@ if st.session_state.clicked:
         st.image("res/assistant.png")
 
     with col2:
-        with st.expander("Command RoboWiz"):
+        with st.expander("Command InfoGenie"):
             research_query_input = st.text_input("Resarch Query")
             if st.button("Send"):
                 robowiz_output = research_apprentice.research(research_query_input)
